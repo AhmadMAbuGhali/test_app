@@ -54,7 +54,7 @@ class _AgeccState extends State<Agecc> {
                   fontSize: 20, color: Colors.red, fontWeight: FontWeight.bold),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
                   padding: EdgeInsets.all(10),
