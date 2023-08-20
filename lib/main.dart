@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_app/calcuater.dart';
 import 'package:test_app/prime_colomn.dart';
 import 'package:test_app/screen.dart';
+import 'package:test_app/task_app.dart';
 import 'package:test_app/text_filed_screen.dart';
 
 import 'ffl.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: Agecc(),
+      home: TaskApp(),
     );
   }
 }
