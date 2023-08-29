@@ -24,6 +24,8 @@ class _ScreenOneState extends State<ScreenOne> {
               title: "Home",
             );
           }));
+
+          Navigator.pushNamed(context,'AgeCalc',);
         },
         child: Text("Next"),
       )),
