@@ -4,10 +4,9 @@ import 'package:test_app/widget/select_card.dart';
 import 'model/choice.dart';
 
 class GridScreen extends StatelessWidget {
-   GridScreen({super.key});
+  GridScreen({super.key});
 
-
-   List<Choice> choice =  [
+  List<Choice> choice = [
     Choice(title: "home", icon: Icons.home),
     Choice(title: "contacts", icon: Icons.contacts),
     Choice(title: "map", icon: Icons.map),
@@ -26,16 +25,23 @@ class GridScreen extends StatelessWidget {
       ),
       body: GridView.builder(
         itemCount: choice.length,
-
-       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-         crossAxisCount: 4,
-         crossAxisSpacing: 4.0,
-         mainAxisSpacing: 8.0,
-       ), itemBuilder: (BuildContext context, int index) {
-        return Center(
-          child: SelectCard(choice: choice[index],),
-        );
-      },
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4,
+          crossAxisSpacing: 4.0,
+          mainAxisSpacing: 8.0,
+        ),
+        itemBuilder: (BuildContext context, int index) {
+          return Center(
+            child: GestureDetector(
+              onTap: (){
+                print("object");
+                Navigator.pushNamed(context,"/t");
+              },
+                child: SelectCard(
+              choice: choice[index],
+            )),
+          );
+        },
       ),
     );
   }

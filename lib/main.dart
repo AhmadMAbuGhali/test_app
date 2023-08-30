@@ -12,14 +12,19 @@ import 'package:test_app/tab_bar.dart';
 import 'package:test_app/tab_bar_Laybrary.dart';
 import 'package:test_app/task_app.dart';
 import 'package:test_app/text_filed_screen.dart';
+import 'package:test_app/text_form.dart';
 
+import 'async_awit.dart';
 import 'bottom_sheet.dart';
+import 'car_appp.dart';
 import 'card_prime.dart';
 import 'custom_nav_bar.dart';
 import 'ffl.dart';
 import 'grid_scrren.dart';
+import 'lazy_image.dart';
 import 'liner.dart';
 import 'list_b.dart';
+import 'network_file.dart';
 
 void main() {
   runApp(MyApp());

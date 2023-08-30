@@ -327,6 +327,7 @@ class _AgeCountState extends State<AgeCount> {
                   });
                 }, child: Text("Calculate")),
                 ElevatedButton(onPressed: () {
+                  Navigator.pushNamed(context, "/t");
                   thisDayController.clear();
                   thisMonthController.clear();
                   thisYearController.clear();

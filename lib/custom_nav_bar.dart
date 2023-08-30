@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
+import 'package:test_app/date_packer.dart';
+import 'package:test_app/grid_scrren.dart';
+import 'package:test_app/network_file.dart';
+import 'package:test_app/screen_one.dart';
 
 import 'calcuater.dart';
 
@@ -19,7 +23,7 @@ class _CoustomNavBarState extends State<CoustomNavBar> {
       AgeCount(),
       AgeCount(),
       AgeCount(),
-      AgeCount(),
+      GridScreen(),
       AgeCount(),
 
     ];
@@ -63,15 +67,17 @@ class _CoustomNavBarState extends State<CoustomNavBar> {
       PersistentBottomNavBarItem(
         icon: Icon(Icons.message),
         title: "Messages",
+
         activeColorPrimary: Colors.deepOrange,
         inactiveColorPrimary: Colors.grey,
         routeAndNavigatorSettings: RouteAndNavigatorSettings(
           initialRoute: '/',
           routes: {
-            '/first': (context) => AgeCount(),
+            '/t': (context) => DatePackerScreen(),
             '/second': (context) => AgeCount(),
           },
         ),
+
       ),
       PersistentBottomNavBarItem(
         icon: Icon(Icons.settings),
@@ -81,7 +87,7 @@ class _CoustomNavBarState extends State<CoustomNavBar> {
         routeAndNavigatorSettings: RouteAndNavigatorSettings(
           initialRoute: '/',
           routes: {
-            '/first': (context) => AgeCount(),
+            '/firstt': (context) => ScreenOne(),
             '/second': (context) => AgeCount(),
           },
         ),
