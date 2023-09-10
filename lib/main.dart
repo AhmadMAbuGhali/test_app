@@ -14,6 +14,11 @@ import 'package:test_app/task_app.dart';
 import 'package:test_app/text_filed_screen.dart';
 import 'package:test_app/advance/text_form.dart';
 
+import 'advance/drop_down.dart';
+import 'advance/expandable_example.dart';
+import 'advance/get_data_by_choice.dart';
+import 'advance/radio.dart';
+import 'advance/slider.dart';
 import 'async_awit.dart';
 import 'bottom_sheet.dart';
 import 'car_appp.dart';
@@ -44,13 +49,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch().copyWith(
           // or from RGB
 
-          primary: const Color(0xffeA2DFA),
+          primary: const Color(0Xff1912FF),
           secondary: const Color(0xFFFFC107),
         ),
       ),
       routes: {
         'AgeCalc':(context)=>AgeCount(),
-        '/':(context)=>DatePackerScreen(),
+        '/':(context)=>ExpandableExample(),
       },
       debugShowCheckedModeBanner: false,
     );

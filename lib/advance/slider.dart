@@ -33,8 +33,12 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
             carouselController: _controller,
             options: CarouselOptions(
                 autoPlay: true,
-                enlargeCenterPage: true,
-                aspectRatio: 2.0,
+                enlargeCenterPage: false,
+
+                enlargeFactor:8,
+                aspectRatio: 15/9,
+                viewportFraction: 0.7,
+                enlargeStrategy: CenterPageEnlargeStrategy.height,
                 onPageChanged: (index, reason) {
                   setState(() {
                     _current = index;
