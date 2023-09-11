@@ -45,7 +45,14 @@ class _DatePackerScreenState extends State<DatePackerScreen> {
           }else{
           print ("Date is not selected");
             }
-            })
+            }),
+          
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text("data"),
+            ],
+          )
         ],
       ),
     );
