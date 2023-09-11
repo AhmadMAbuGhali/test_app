@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
-import 'package:test_app/date_packer.dart';
-import 'package:test_app/grid_scrren.dart';
-import 'package:test_app/network_file.dart';
-import 'package:test_app/screen_one.dart';
+import 'package:test_app/basic/date_packer.dart';
+import 'package:test_app/basic/grid_scrren.dart';
+import 'package:test_app/basic/network_file.dart';
+import 'package:test_app/basic/screen_one.dart';
 
 import 'calcuater.dart';
 

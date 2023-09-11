@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/widget/select_card.dart';
 
-import 'model/choice.dart';
+import '../model/choice.dart';
 
 class GridScreen extends StatelessWidget {
   GridScreen({super.key});

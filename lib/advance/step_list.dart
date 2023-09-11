@@ -18,19 +18,22 @@ class _StepListState extends State<StepList> {
   @override
   Widget build(BuildContext context) {
     return ExpansionPanelList(
-      expansionCallback: (int index, bool isExpand) {
-        setState(() {
-          _steps[index].isExpandable = !isExpand;
-        });
-      },
-      children: _steps.map<ExpansionPanel>((StepEx stepEx) {
-        return ExpansionPanel(headerBuilder: (BuildContext context,bool isExpanded){
-          return ListTile(
-            title: Text(stepEx.title),
-          );
-        }, body: ListTile(title:  Text(stepEx.body),),
-        isExpanded: stepEx.isExpandable);
-      }).toList()
-    );
+        expansionCallback: (int index, bool isExpand) {
+          setState(() {
+            _steps[index].isExpandable = isExpand;
+          });
+        },
+        children: _steps.map<ExpansionPanel>((StepEx stepEx) {
+          return ExpansionPanel(
+              headerBuilder: (BuildContext context, bool isExpanded) {
+                return ListTile(
+                  title: Text(stepEx.title),
+                );
+              },
+              body: ListTile(
+                title: Text(stepEx.body),
+              ),
+              isExpanded: stepEx.isExpandable);
+        }).toList());
   }
 }

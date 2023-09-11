@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/screen_two.dart';
+import 'package:test_app/basic/screen_two.dart';
 import 'package:test_app/widget/my_drawer.dart';
 
 class ScreenOne extends StatefulWidget {

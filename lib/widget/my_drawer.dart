@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../screen_two.dart';
+import '../basic/screen_two.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});

@@ -33,11 +33,15 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
             carouselController: _controller,
             options: CarouselOptions(
                 autoPlay: true,
-                enlargeCenterPage: false,
+                height: 180.0,
 
-                enlargeFactor:8,
-                aspectRatio: 15/9,
-                viewportFraction: 0.7,
+                enlargeCenterPage: true,
+
+                aspectRatio: 16 / 9,
+                autoPlayCurve: Curves.fastOutSlowIn,
+                enableInfiniteScroll: true,
+                autoPlayAnimationDuration: Duration(milliseconds: 800),
+                viewportFraction: 0.8,
                 enlargeStrategy: CenterPageEnlargeStrategy.height,
                 onPageChanged: (index, reason) {
                   setState(() {
@@ -71,7 +75,7 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
   final List<Widget> imageSliders = imgList
       .map((item) => Container(
     child: Container(
-      margin: EdgeInsets.all(5.0),
+      margin: EdgeInsets.all(15.0),
       child: ClipRRect(
           borderRadius: BorderRadius.all(Radius.circular(5.0)),
           child: Stack(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/calcuater.dart';
+
+import 'calcuater.dart';
 
 class BottomNavigationBarExample extends StatefulWidget {
   const BottomNavigationBarExample({super.key});

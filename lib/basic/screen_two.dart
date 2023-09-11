@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/screen_one.dart';
+import 'package:test_app/basic/screen_one.dart';
 import 'package:test_app/widget/my_drawer.dart';
 
 class ScreenTwo extends StatelessWidget {

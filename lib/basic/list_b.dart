@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'widget/tf_cont.dart';
+import '../widget/tf_cont.dart';
+
 
 class ListBuild extends StatelessWidget {
 
