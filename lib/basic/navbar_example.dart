@@ -56,7 +56,7 @@ class _BottomNavigationBarExampleState
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.camera_alt),
             label: 'Home',
           ),
           BottomNavigationBarItem(

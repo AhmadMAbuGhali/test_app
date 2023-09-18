@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/basic/prime_colomn.dart';
 import 'package:test_app/basic/screen_two.dart';
 import 'package:test_app/widget/my_drawer.dart';
 
@@ -19,13 +20,11 @@ class _ScreenOneState extends State<ScreenOne> {
       body: Center(
           child: ElevatedButton(
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return ScreenTwo(
-              title: "Home",
-            );
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+            return PrimeColumn();
           }));
 
-          Navigator.pushNamed(context,'AgeCalc',);
+
         },
         child: Text("Next"),
       )),

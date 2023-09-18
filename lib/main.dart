@@ -11,8 +11,15 @@ import 'advance/pre_in.dart';
 import 'advance/radio.dart';
 import 'advance/slider.dart';
 import 'advance/test_file.dart';
+import 'basic/bottom_sheet.dart';
 import 'basic/date_packer.dart';
+import 'basic/grid_scrren.dart';
+import 'basic/list_b.dart';
+import 'basic/navbar_example.dart';
+import 'basic/prime_colomn.dart';
 import 'basic/screen_one.dart';
+import 'basic/tab_bar.dart';
+import 'basic/tab_bar_Laybrary.dart';
 
 
 void main() {
@@ -33,15 +40,15 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSwatch().copyWith(
             // or from RGB
 
-            primary: const Color(0Xff1912FF),
-            secondary: const Color(0xFFFFC107),
+            primary: Colors.cyan
           ),
         ),
 
         debugShowCheckedModeBanner: false,
+
         home: Directionality(
           // add this
-          textDirection: TextDirection.rtl, // set this property
+          textDirection: TextDirection.ltr, // set this property
           child: ScreenOne(),
         ),
 

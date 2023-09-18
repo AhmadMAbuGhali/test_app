@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/advance/text_form.dart';
+import 'package:test_app/basic/screen_one.dart';
 
 class PrimeColumn extends StatefulWidget {
   @override
@@ -33,7 +34,9 @@ class _PrimeColumnState extends State<PrimeColumn> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+      ),
       body: SingleChildScrollView(
         child: Form(
           key: signUpFormKey,
@@ -95,7 +98,11 @@ class _PrimeColumnState extends State<PrimeColumn> {
                       setState(() {
                         if (signUpFormKey.currentState!.validate() != null) {
                           age = 77;
+
                         }
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                          return ScreenOne();
+                        }));
                       });
                     },
                     onDoubleTap: () {
@@ -164,7 +171,20 @@ class _PrimeColumnState extends State<PrimeColumn> {
                     child: Container(
                       width: 100,
                       height: 100,
-                      decoration: BoxDecoration(color: Colors.blue),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                            end: Alignment.bottomRight,
+                            colors: [
+                          Colors.red,
+                          Colors.blue,
+                          Colors.black,
+                          Colors.yellowAccent,
+                          Colors.white,
+                        ]
+
+                        )
+                      ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -322,12 +342,16 @@ class _PrimeColumnState extends State<PrimeColumn> {
               SizedBox(
                 height: 50,
               ),
-              Container(
-                width: 100,
-                height: 100,
-                decoration: BoxDecoration(color: Colors.yellow),
-                child: Text('''My names Huda Keshta
-                                My Age 43   '''),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  margin: EdgeInsets.symmetric(vertical: 17),
+                  width: 100,
+                  height: 150,
+                  decoration: BoxDecoration(color: Colors.yellow),
+                  child: Text('''My names Huda Keshta
+                                  My Age 43   '''),
+                ),
               ),
               SizedBox(
                 // height: 58,
@@ -341,12 +365,17 @@ class _PrimeColumnState extends State<PrimeColumn> {
                     },
                     child: Text("Helloasdkjashdlkjahsl")),
               ),
-              ElevatedButton(onPressed: () => hello(), child: Text("Hello 3")),
+
+              SizedBox(width: 150,height: 100,child: ElevatedButton(onPressed: () => hello(), child: Text("Hello 3"))),
+
+
               TextButton(
                   onPressed: () {
                     print("Hi444");
                   },
                   child: Text("Hello")),
+
+
               IconButton(
                   onPressed: () {
                     print("Hi2342");

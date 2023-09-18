@@ -26,9 +26,9 @@ class GridScreen extends StatelessWidget {
       body: GridView.builder(
         itemCount: choice.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 4,
-          crossAxisSpacing: 4.0,
-          mainAxisSpacing: 8.0,
+          crossAxisCount: 7,
+          crossAxisSpacing: 8.0,
+          mainAxisSpacing: 16.0,
         ),
         itemBuilder: (BuildContext context, int index) {
           return Center(

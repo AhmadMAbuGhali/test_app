@@ -26,18 +26,28 @@ class _BotSheetState extends State<BotSheet> {
     ),),
           Center(
             child: ElevatedButton(onPressed: () {
-              showModalBottomSheet(context: context, builder: (mm) {
+              showModalBottomSheet(context: context, builder: (x) {
                 return Container(
                   decoration: BoxDecoration(
                     border: Border.all(width: 2),
-                        color: Colors.red,
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            Colors.red[200]!,
+                            Colors.red[400]!,
+                            Colors.red[700]!,
+                            Colors.red[900]!,
+
+
+                          ],),
                     borderRadius: BorderRadius.circular(15)
                   ),
                   height: 180,
                   child: Center(
                     child: ListView.builder(
                         itemCount: 70,
-                        itemBuilder: (mm,index){
+                        itemBuilder: (x,index){
                       return Text("Hi");
                     })
 

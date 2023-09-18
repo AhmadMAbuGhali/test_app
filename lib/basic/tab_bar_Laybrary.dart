@@ -27,9 +27,9 @@ class _TabBarLayState extends State<TabBarLay> {
           child: Column(
             children: <Widget>[
               ButtonsTabBar(
-                backgroundColor: Colors.red,
+                backgroundColor: Colors.purple,
                 unselectedBackgroundColor: Colors.blue[300],
-                duration: 10000,
+                duration: 15,
                 unselectedLabelStyle: TextStyle(color: Colors.black),
                 labelStyle:
                 TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
@@ -42,7 +42,7 @@ class _TabBarLayState extends State<TabBarLay> {
                     icon: Icon(Icons.directions_transit),
                     text: "transit",
                   ),
-                  Tab(icon: Icon(Icons.directions_bike)),
+                  Tab(child: Image.asset("assets/images/goToLogin.png"),),
                   Tab(icon: Icon(Icons.directions_car)),
                   Tab(icon: Icon(Icons.directions_transit)),
                   Tab(icon: Icon(Icons.directions_bike)),
@@ -56,7 +56,7 @@ class _TabBarLayState extends State<TabBarLay> {
                       child: Icon(Icons.directions_transit),
                     ),
                     Center(
-                      child: Icon(Icons.directions_bike),
+                      child: Image.network("https://openvpn.net/wp-content/uploads/site-to-site-openvpn-img.jpg"),
                     ),
                     Center(
                       child: Icon(Icons.directions_car),
